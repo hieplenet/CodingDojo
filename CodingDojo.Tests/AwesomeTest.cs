@@ -21,7 +21,7 @@ namespace CodingDojo.Tests
 		{
 			IList<CoinCollection> changes = banker.FindBreakingWays(2).ToList();
 			Assert.AreEqual(1, changes.Count);
-			Assert.AreEqual(4, changes[0][Coin.Penny]);
+			Assert.AreEqual(2, changes[0][Coin.Penny]);
 		}
 
 		[TestMethod]
