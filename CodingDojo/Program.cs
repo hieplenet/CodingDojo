@@ -8,7 +8,8 @@ namespace CodingDojo
     class Program
     {
         public static void Main()
-        {			
+        {
+			Banker banker = new Banker();
             var ways = banker.FindBreakingWays(100).ToList();
             ways.ForEach(x => Console.WriteLine(x.ToString()));
             Console.Read();
